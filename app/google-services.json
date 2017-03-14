@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "29584469716",
+    "firebase_url": "https://invento2k17app.firebaseio.com",
+    "project_id": "invento2k17app",
+    "storage_bucket": "invento2k17app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29584469716:android:7d0cb206486d2793",
+        "android_client_info": {
+          "package_name": "infinityinc.com.invento2k17"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29584469716-9ig091sq80t3mgpigff5fnrqrbqosgaf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "infinityinc.com.invento2k17",
+            "certificate_hash": "5191d805ef47be31bb1a11f7c5d5715ea7493acd"
+          }
+        },
+        {
+          "client_id": "29584469716-pffo2a6vm2r4d7tthqbdpgqjv9mpkf1e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFbgeImikT-fi4PKJDDrXbueP_mTRAV4U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29584469716-pffo2a6vm2r4d7tthqbdpgqjv9mpkf1e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Invento 2K17</string>
+    <string name="facebook_application_id" translatable="false">184672598699478 </string>
+    <string name="title_activity_events">Events</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>
