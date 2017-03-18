@@ -6,7 +6,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.firebase.ui.auth.AuthUI;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -16,13 +16,14 @@ import com.google.firebase.auth.FirebaseAuth;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private static final int RC_SIGN_IN = 0;
     private FirebaseAuth auth;
-    public Button button;
+    public ImageButton button;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        button = (ImageButton) findViewById(R.id.eventsButton);
         auth = FirebaseAuth.getInstance();
         if (auth.getCurrentUser() != null) {
             //user logged in
@@ -36,7 +37,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         findViewById(R.id.log_out_button).setOnClickListener(this);
-        findViewById(R.id.eventsButton).setOnClickListener(this);
+        button = (ImageButton) findViewById(R.id.eventsButton);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,details.class);
+                startActivity(i);
+            }
+        });
 
     }
 
@@ -68,10 +76,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     });
         }
 
+
     }
+
+
+
+
 }
-
-
-
 
 

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dance_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="infinityinc.com.invento2k17.dance_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dancegif"
+        android:background="#000000"
+            android:id="@+id/gifImageView"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dance Event"
+            android:textColor="@color/com_facebook_messenger_blue"
+            android:id="@+id/textView"
+            android:textSize="50dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:background="@android:color/background_dark"
+            android:layout_width="match_parent"
+            android:textColor="@color/authui_colorPrimary"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gifImageView"
+            android:id="@+id/textViewd"
+            android:text="The Name of the Event is Dance Event and the minimum No Of Participants is 4.A time limit of 5 minutes will be given to the team.The Song can be of any Type,you can choose any type of dance for of your wish and will."/>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/giphy"
+            android:background="#000000"
+            android:layout_below="@id/textViewd"
+            android:id="@+id/gifImageView1"/>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/giphyy"
+            android:background="#000000"
+            android:layout_below="@id/gifImageView1"
+            android:id="@+id/gifImageView2"/>
+/>    </RelativeLayout>
+</ScrollView>

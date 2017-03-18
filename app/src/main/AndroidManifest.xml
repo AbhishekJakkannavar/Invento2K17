@@ -17,14 +17,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Events"
-            android:label="@string/title_activity_events"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="infinityinc.com.invento2k17.MainActivity" />
+        <activity android:name=".details" />
+        <activity android:name=".dance_Activity"
+
+            >
+
         </activity>
     </application>
 
