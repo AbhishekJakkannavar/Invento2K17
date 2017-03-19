@@ -18,7 +18,7 @@
         app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
         android:layout_marginStart="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="16dp" />
+        android:layout_marginLeft="8dp" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -27,13 +27,10 @@
         android:background="@null"
 
         android:id="@+id/eventsButton"
-        app:layout_constraintTop_toTopOf="@+id/scheduleButton"
         android:layout_marginStart="8dp"
         app:layout_constraintLeft_toRightOf="@+id/scheduleButton"
         android:layout_marginLeft="8dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginRight="16dp" />
+        app:layout_constraintTop_toTopOf="@+id/scheduleButton" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -50,7 +47,7 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/register"
         android:background="@null"
-        android:id="@+id/imageButton5"
+        android:id="@+id/registerButton"
         app:layout_constraintLeft_toLeftOf="@+id/imageButton3"
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
@@ -61,13 +58,11 @@
         app:srcCompat="@drawable/notification"
         android:background="@null"
         android:id="@+id/imageButton4"
-        app:layout_constraintTop_toTopOf="@+id/imageButton3"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginRight="16dp"
         android:layout_marginStart="8dp"
         app:layout_constraintLeft_toRightOf="@+id/imageButton3"
-        android:layout_marginLeft="8dp" />
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/eventsButton" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -75,13 +70,11 @@
         android:background="@null"
         app:srcCompat="@drawable/maps"
         android:id="@+id/imageButton6"
-        app:layout_constraintTop_toTopOf="@+id/imageButton5"
         android:layout_marginStart="8dp"
-        app:layout_constraintLeft_toRightOf="@+id/imageButton5"
+        app:layout_constraintLeft_toRightOf="@+id/registerButton"
         android:layout_marginLeft="8dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginRight="16dp" />
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
 
     <ImageButton
         android:layout_width="wrap_content"

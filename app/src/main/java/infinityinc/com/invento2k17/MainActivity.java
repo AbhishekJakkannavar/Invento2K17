@@ -13,17 +13,24 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 
+import infinityinc.com.invento2k17.Register.userDetails;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private static final int RC_SIGN_IN = 0;
     private FirebaseAuth auth;
-    public ImageButton button;
+    public ImageButton eventButton;
+    public ImageButton registerButton;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button = (ImageButton) findViewById(R.id.eventsButton);
+        //FindView By Id Code
+        eventButton = (ImageButton) findViewById(R.id.eventsButton);
+        registerButton =(ImageButton)findViewById(R.id.registerButton);
+
+        //Firebase Authentication Code
         auth = FirebaseAuth.getInstance();
         if (auth.getCurrentUser() != null) {
             //user logged in
@@ -37,14 +44,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         findViewById(R.id.log_out_button).setOnClickListener(this);
-        button = (ImageButton) findViewById(R.id.eventsButton);
-        button.setOnClickListener(new View.OnClickListener() {
+
+        //SEND INTENT TO EVENTS ACTIVITY
+        eventButton = (ImageButton) findViewById(R.id.eventsButton);
+        eventButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this,details.class);
                 startActivity(i);
             }
         });
+
+        //SEND INTENT TO REGISTER ACTIVITY
+        registerButton = (ImageButton) findViewById(R.id.registerButton);
+        registerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,userDetails.class);
+                startActivity(i);
+            }
+        });
+
+
+
+
 
     }
 

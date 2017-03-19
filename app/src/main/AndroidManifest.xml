@@ -18,11 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".details" />
-        <activity android:name=".dance_Activity"
-
-            >
-
-        </activity>
+        <activity android:name=".dance_Activity"></activity>
+        <activity android:name=".Register.userDetails"></activity>
     </application>
 
 </manifest>
