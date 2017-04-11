@@ -4,7 +4,7 @@
     android:id="@+id/activity_dance_"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="infinityinc.com.invento2k17.dance_Activity">
+    tools:context="infinityinc.com.invento2k17.Events.dance_Activity">
 
     <RelativeLayout
         android:layout_width="match_parent"

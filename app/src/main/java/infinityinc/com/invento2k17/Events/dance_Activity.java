@@ -1,7 +1,9 @@
-package infinityinc.com.invento2k17;
+package infinityinc.com.invento2k17.Events;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import infinityinc.com.invento2k17.R;
 
 public class dance_Activity extends AppCompatActivity {
 

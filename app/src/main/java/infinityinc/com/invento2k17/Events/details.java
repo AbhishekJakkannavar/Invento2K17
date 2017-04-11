@@ -1,4 +1,4 @@
-package infinityinc.com.invento2k17;
+package infinityinc.com.invento2k17.Events;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TabHost;
 import android.widget.Toast;
+
+import infinityinc.com.invento2k17.R;
 
 public class details extends AppCompatActivity {
 
@@ -21,7 +23,7 @@ public class details extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_details);
+        setContentView(R.layout.activity_eventdetails);
 
         tabs = (TabHost)findViewById(R.id.tabhost);
         tabs.setup();

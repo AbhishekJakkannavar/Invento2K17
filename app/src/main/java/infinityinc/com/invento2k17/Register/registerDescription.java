@@ -6,43 +6,19 @@ package infinityinc.com.invento2k17.Register;
 
 public class registerDescription {
 
-    private String name;
-    private String emailId;
-    private String collegeName;
-    private String phoneNo;
+    public String name;
+    public String emailId;
+    public String collegeName;
+    public String phoneNo;
 
     public registerDescription() {
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getEmailId() {
-        return emailId;
-    }
-
-    public String getCollegeName() {
-        return collegeName;
-    }
-
-    public String getPhoneNo() {
-        return phoneNo;
-    }
-
-    public void setName(String name) {
+    public registerDescription(String name, String emailId, String collegeName, String phoneNo) {
         this.name = name;
-    }
-
-    public void setEmailId(String emailId) {
         this.emailId = emailId;
-    }
-
-    public void setCollegeName(String collegeName) {
         this.collegeName = collegeName;
-    }
-
-    public void setPhoneNo(String phoneNo) {
         this.phoneNo = phoneNo;
     }
 }
+

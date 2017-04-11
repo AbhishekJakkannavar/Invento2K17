@@ -1,4 +1,4 @@
-package infinityinc.com.invento2k17;
+package infinityinc.com.invento2k17.MainActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,13 +13,21 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 
+import infinityinc.com.invento2k17.Events.details;
+import infinityinc.com.invento2k17.Map.map;
+import infinityinc.com.invento2k17.Notification.notification;
+import infinityinc.com.invento2k17.R;
 import infinityinc.com.invento2k17.Register.userDetails;
+import infinityinc.com.invento2k17.Sponsers.CardDemoActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private static final int RC_SIGN_IN = 0;
     private FirebaseAuth auth;
     public ImageButton eventButton;
     public ImageButton registerButton;
+    public ImageButton mapButton;
+    public ImageButton notificationButton;
+    public ImageButton sponsersButton;
 
 
     @Override
@@ -29,6 +37,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //FindView By Id Code
         eventButton = (ImageButton) findViewById(R.id.eventsButton);
         registerButton =(ImageButton)findViewById(R.id.registerButton);
+        notificationButton =(ImageButton)findViewById(R.id.notificationButton);
+
 
         //Firebase Authentication Code
         auth = FirebaseAuth.getInstance();
@@ -60,11 +70,41 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this,userDetails.class);
+                Intent i = new Intent(MainActivity.this,googledoc.class);
                 startActivity(i);
             }
         });
 
+
+        //SEND INTENT TO REGISTER ACTIVITY
+         mapButton= (ImageButton) findViewById(R.id.mapButton);
+        mapButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,map.class);
+                startActivity(i);
+            }
+        });
+
+        //SEND INTENT TO NOTIFICATION ACTIVITY
+        notificationButton= (ImageButton) findViewById(R.id.notificationButton);
+        notificationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, notification.class);
+                startActivity(i);
+            }
+        });
+
+        //SEND INTENT TO SPONSERS ACTIVITY
+       sponsersButton= (ImageButton) findViewById(R.id.sponsersButton);
+        sponsersButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, CardDemoActivity.class);
+                startActivity(i);
+            }
+        });
 
 
 
